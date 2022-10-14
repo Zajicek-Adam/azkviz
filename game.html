@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main-style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="game-style.css">
+    <title>AZ Kvíz</title>
 </head>
+
 <body>
-    
+    <img id="lmaoo" src="img/1665636976194-removebg-preview.png" alt="">
+    <img id="lmaoo2" src="img/Coconut-maid.png" alt="">
+    <header>
+        <h2 id="threatone">Hrozba herec 1</h2>
+        <h2 id="threattwo">Hrozba herec 2</h2>
+    </header>
+    <div class="container">
+        <div style="grid-column: 4; grid-row: 1;" class="cell left right"></div>
+
+        <div style="grid-column: 3; grid-row: 2; right: -36px;" class="cell left"></div>
+        <div style="grid-column: 4; grid-row: 2; right: -36px;" class="cell right"></div>
+
+        <div style="grid-column: 3; grid-row: 3;" class="cell left"></div>
+        <div style="grid-column: 4; grid-row: 3;" class="cell"></div>
+        <div style="grid-column: 5; grid-row: 3;" class="cell right"></div>
+
+        <div style="grid-column: 2; grid-row: 4; right: -36px;" class="cell left"></div>
+        <div style="grid-column: 3; grid-row: 4; right: -36px;" class="cell"></div>
+        <div style="grid-column: 4; grid-row: 4; right: -36px;" class="cell"></div>
+        <div style="grid-column: 5; grid-row: 4; right: -36px;" class="cell right"></div>
+
+        <div style="grid-column: 2; grid-row: 5;" class="cell left"></div>
+        <div style="grid-column: 3; grid-row: 5;" class="cell"></div>
+        <div style="grid-column: 4; grid-row: 5;" class="cell"></div>
+        <div style="grid-column: 5; grid-row: 5;" class="cell"></div>
+        <div style="grid-column: 6; grid-row: 5;" class="cell right"></div>
+
+        <div style="grid-column: 1; grid-row: 6;right: -36px;" class="cell left"></div>
+        <div style="grid-column: 2; grid-row: 6;right: -36px;" class="cell"></div>
+        <div style="grid-column: 3; grid-row: 6;right: -36px;" class="cell"></div>
+        <div style="grid-column: 4; grid-row: 6;right: -36px;" class="cell"></div>
+        <div style="grid-column: 5; grid-row: 6;right: -36px;" class="cell"></div>
+        <div style="grid-column: 6; grid-row: 6;right: -36px;" class="cell right"></div>
+
+        <div style="grid-column: 1; grid-row: 7;" class="cell bottom left"></div>
+        <div style="grid-column: 2; grid-row: 7;" class="cell bottom"></div>
+        <div style="grid-column: 3; grid-row: 7;" class="cell bottom"></div>
+        <div style="grid-column: 4; grid-row: 7;" class="cell bottom"></div>
+        <div style="grid-column: 5; grid-row: 7;" class="cell bottom"></div>
+        <div style="grid-column: 6; grid-row: 7;" class="cell bottom"></div>
+        <div style="grid-column: 7; grid-row: 7;" class="cell bottom right"></div>
+    </div>
+    <div id="mogal">
+        <p id="mogal-text">
+
+        </p>
+        <div>
+            <button id="correct">
+                Správně
+            </button>
+            <button id="wrong">
+                Špatně
+            </button>
+        </div>
+    </div>
+    <script src="game.js"></script>
 </body>
+
 </html>

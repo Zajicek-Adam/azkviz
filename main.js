@@ -6,10 +6,6 @@ secondName = document.getElementById('secondName');
 
 myStorage = window.localStorage;
 
-let _firstName;
-let _secondName;
-
-
 form = document.getElementById("form");
 
 form.addEventListener('submit', e => {
