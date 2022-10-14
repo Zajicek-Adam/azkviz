@@ -42,10 +42,19 @@ function InitField() {
             if (!turn) {
                 threatactoroneCells.push(_cell);
                 susmoguscells.splice(susmoguscells.indexOf(_cell), 1);
+                _cell.style.backgroundImage = "url('./img/azkviz-blue.svg')";
+                turn = true;
             }
             else {
+                threatactoroneCells.push(_cell);
+                susmoguscells.splice(susmoguscells.indexOf(_cell), 1);
+                _cell.style.backgroundImage = "url('./img/azkviz-orange.svg')";
+                turn = false;
             }
         }
+        _cell.style.cursor = "default";
+        _cell.classList.remove("selected");
+        TurnManager();
         _cell.removeEventListener('click', e);
     })
     wrongButton.addEventListener('click', e => {
@@ -58,11 +67,9 @@ function InitField() {
 function TurnManager() {
     if (!turn) {
         ChangeColor(firstLabel, secondLabel);
-        turn = true;
     }
     else {
         ChangeColor(secondLabel, firstLabel);
-        turn = false;
     }
 }
 function ChangeColor(element, element2) {
