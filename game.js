@@ -82,12 +82,12 @@ function InitField() {
             if (!turn) {
                 threatactoroneCells.push(_cell);
                 _cell.style.backgroundImage = "url('./img/azkviz-orange.svg')";
-                turn = true;
+                turn = false;
             }
             else {
                 threatactortwoCells.push(_cell);
                 _cell.style.backgroundImage = "url('./img/azkviz-blue2.svg')";
-                turn = false;
+                turn = true;
             }
             _cell.removeEventListener('click', e);
             _cell.style.cursor = "default";
