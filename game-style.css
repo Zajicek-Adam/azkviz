@@ -42,6 +42,11 @@ header {
 
 h2 {
     transition: all 400ms ease;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size: 3em;
+    background-clip: padding-box;
+    padding: 3em;
 }
 #mogal, #mogal div, .cell{
     display: flex;
@@ -73,11 +78,13 @@ h2 {
 
 #lmaoo {
     position: absolute;
+    top: 0;
     left: -40px;
     height: 100%;
 }
 
 #lmaoo2 {
+    top: 0;
     position: absolute;
     right: 0px;
     height: 100%;
@@ -90,4 +97,13 @@ h2 {
 }
 .selected{
     filter: contrast(.25);
+}
+.black{
+    background-image: url('./img/azkviz-black.svg');
+}
+#threatone{
+    background-image: url('./img/azkviz-blue2.svg');
+}
+#threattwo{
+    background-image: url('./img/azkviz-orange.svg');
 }
