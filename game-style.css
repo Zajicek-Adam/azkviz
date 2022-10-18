@@ -44,8 +44,9 @@ h2 {
     transition: all 400ms ease;
     background-position: center;
     background-repeat:  no-repeat;
-    background-size: 3em;
+    background-size: 5em;
     background-clip: padding-box;
+    font-size: 1em;
     padding: 3em;
 }
 #mogal, #mogal div, .cell{
